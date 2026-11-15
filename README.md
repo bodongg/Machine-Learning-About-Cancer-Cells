@@ -33,7 +33,17 @@ The notebook extracts histogram of oriented gradients (HOG) features to describe
 
 Random forest scored **0.7993 macro F1** on 814 held-out crops, with **80.34% accuracy** and **80.31% balanced accuracy**. The most frequent error was labeling dyskeratotic cells as koilocytotic (23 crops). Koilocytotic cells had the lowest recall (67.92%).
 
-Mean validation macro F1 was 0.8188 for random forest, 0.7508 for logistic regression, and 0.0601 for the majority baseline. The experiment used Kaggle dataset version 1. See the [research report](research-report.md) for the full confusion matrix.
+### Validation performance
+
+![Horizontal bar chart comparing mean validation macro F1 for random forest (0.8188), logistic regression (0.7508), and the majority baseline (0.0601)](model-comparison.svg)
+
+Random forest led logistic regression by 0.0680 macro F1 in four-fold validation. The held-out score above comes from a separate set of parent clusters.
+
+### Held-out errors by cell class
+
+![Five-class confusion matrix and per-class recall for the 814 held-out crops](confusion-matrix.svg)
+
+Per-class recall ranged from 67.9% for koilocytotic cells to 88.2% for dyskeratotic cells. See the [research report](research-report.md) for the full count table and validation fold variability.
 
 ## 50 project contributions
 
