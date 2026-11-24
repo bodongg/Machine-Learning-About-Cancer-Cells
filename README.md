@@ -13,7 +13,7 @@ This project asks how well simple machine-learning models can classify **individ
 
 SIPaKMeD contains **4,049 isolated cell images** cropped from **966 parent cluster images**. The original authors permit experimental use and request citation of their ICIP 2018 paper. [Kaggle download](https://www.kaggle.com/datasets/prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed) · [Original dataset and usage information](https://www.cs.uoi.gr/~marina/sipakmed.html) · [Original paper](https://www.cse.uoi.gr/~sfikas/sipakmed2018.pdf)
 
-| Cell class | Crops |
+| Cell class | Crops in Kaggle version 1 |
 | --- | ---: |
 | Dyskeratotic | 813 |
 | Koilocytotic | 825 |
